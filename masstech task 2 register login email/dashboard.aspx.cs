@@ -29,7 +29,7 @@ namespace masstech_task_2_register_login_email
             conn = new SqlConnection(con);
             conn.Open();
 
-            if (!IsPostBack) 
+            if (!IsPostBack) // ✅ This avoids reloading data on every postback
             {
                 Label1.Text = "hello " + Session["email"].ToString();
 
