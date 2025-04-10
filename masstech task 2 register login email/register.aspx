@@ -33,6 +33,9 @@
             <br />
             <asp:Button ID="btnsignup" runat="server" OnClick="btnsignup_Click" Text="Sign Up" />
 
+        &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="btnlogin" runat="server" Text="Login" OnClick="btnlogin_Click" CausesValidation="false" />
+
         </div>
     </form>
 </body>

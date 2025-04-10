@@ -20,8 +20,7 @@ namespace masstech_task_2_register_login_email
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(con);
-            conn.Open();
+            
         }
 
         protected void btnsignup_Click(object sender, EventArgs e)
@@ -33,31 +32,13 @@ namespace masstech_task_2_register_login_email
 
             try
             {
-                using (SqlConnection conn = new SqlConnection(con))
-                {
-                    conn.Open();
 
-                    // Check for existing user/email
-                    string checkQuery = "SELECT * FROM registrationwithmail WHERE username = @Username OR email = @Email";
-                    SqlCommand checkCmd = new SqlCommand(checkQuery, conn);
-                    checkCmd.Parameters.AddWithValue("@Username", userid);
-                    checkCmd.Parameters.AddWithValue("@Email", email);
 
-                    SqlDataAdapter adapter = new SqlDataAdapter(checkCmd);
-                    DataSet ds = new DataSet();
-                    adapter.Fill(ds);
 
-                    if (ds.Tables[0].Rows.Count > 0)
-                    {
-                        // User already exists
-                        
-                        Response.Write("<script>alert('User already exists')</script>");
-                        
-                        return;
-                    }
-
-                    // Insert new user
-                    string insertQuery = "INSERT INTO registrationwithmail (username, email, password) VALUES (@Username, @Email, @Password)";
+                conn = new SqlConnection(con);
+                conn.Open();
+                // Insert new user
+                string insertQuery = "INSERT INTO registrationwithmail VALUES (@Username, @Email, @Password)";
                     SqlCommand insertCmd = new SqlCommand(insertQuery, conn);
                     insertCmd.Parameters.AddWithValue("@Username", userid);
                     insertCmd.Parameters.AddWithValue("@Email", email);
@@ -65,22 +46,24 @@ namespace masstech_task_2_register_login_email
 
                     insertCmd.ExecuteNonQuery();
 
-                   
+                conn.Close();
                     Response.Write("<script>alert('User Created Successfully')</script>");
 
-                    //// Optional: clear fields
-                    //txtuserid.Text = "";
-                    //txtemail.Text = "";
-                    //// Don't clear password here unless you want it blanked
-                }
+                Response.Redirect("login.aspx");
+                
             }
             catch (Exception ex)
             {
               
                 Response.Write($"<script>alert('{ex.Message}')</script>");
             }
+
         }
 
+        protected void btnlogin_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("login.aspx");
+        }
     }
-    }
+    
 }
