@@ -1,0 +1,38 @@
+﻿* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "sans-serif","Poppins";
+}
+body {
+    background-color:;
+    height: 100vh;
+/*    width: 100vh;*/
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    
+    
+}
+
+form1 {
+    height: 500px;
+    width: 500px;
+    
+}
+.wrapper{
+    width: 450px;
+    
+}
+.wrapper h1{
+    font-size:36px;
+    text-align:center;
+}
+.wrapper .input-box{
+    width:100%;
+    height:30px;
+    margin:35px;
+    font-size:25px;
+}
+
+
