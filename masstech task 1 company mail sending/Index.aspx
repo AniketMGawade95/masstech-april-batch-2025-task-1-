@@ -12,7 +12,19 @@
     <div class="wrapper">
 
     <form id="form1" runat="server">
+
+
         <h1>Interview Registration</h1>
+
+
+        <div class="input-box mmm">
+            <br />
+            <asp:Label ID="lblResume" runat="server" Text="Resume"></asp:Label>
+            <asp:FileUpload ID="FileUploadResume" runat="server" />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="FileUploadResume" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+            
+        </div>
+
         <div class="input-box">
             <asp:Label ID="lblStream" runat="server" Text="Stream"></asp:Label>  
             <asp:DropDownList ID="DropDownListStream" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownListStream_SelectedIndexChanged">
@@ -36,6 +48,7 @@
                 <asp:ListItem>OTHERS</asp:ListItem>
             </asp:DropDownList>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="DropDownListStream" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+           
         </div>
 
         <div class="input-box">
@@ -46,7 +59,23 @@
                 <asp:ListItem>EXPERIENCED</asp:ListItem>
             </asp:DropDownList>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="DropDownListExperience" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+           
         </div>
+
+         <div class="input-box">
+            <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
+            <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Enter Valid Email" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+        </div>
+        <div class="input-box">
+            <asp:Label ID="lblContactno" runat="server" Text="Contact Number"></asp:Label>
+            <asp:TextBox ID="txtContact" runat="server" TextMode="Number"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="txtContact"></asp:RequiredFieldValidator>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtContact" ErrorMessage="Enter A Proper Number" ForeColor="Red" ValidationExpression="^[6-9]\d{9}$"></asp:RegularExpressionValidator>
+            
+        </div>
+
 
         <div class="input-box">
             <asp:Label ID="lblCtc" runat="server" Text="CTC"></asp:Label>
@@ -60,35 +89,6 @@
             <asp:Label ID="lblNp" runat="server" Text="Notice Period In Months"></asp:Label>
             <asp:TextBox ID="txtNoticePeriod" runat="server" TextMode="Number"></asp:TextBox>
         </div>
-        <div class="input-box">
-            <asp:Label ID="lblEmail" runat="server" Text="Email"></asp:Label>
-            <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Enter Valid Email" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-        </div>
-        <div class="input-box">
-            <asp:Label ID="lblContactno" runat="server" Text="Contact Number"></asp:Label>
-            <asp:TextBox ID="txtContact" runat="server" TextMode="Number"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*" ForeColor="Red" ControlToValidate="txtContact"></asp:RequiredFieldValidator>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtContact" ErrorMessage="Enter A Proper Number" ForeColor="Red" ValidationExpression="^[6-9]\d{9}$"></asp:RegularExpressionValidator>
-            <br />
-            <br />
-            <br />
-            <br />
-        </div>
-        <div class="input-box mmm">
-            <br />
-            <asp:Label ID="lblResume" runat="server" Text="Resume"></asp:Label>
-            <asp:FileUpload ID="FileUploadResume" runat="server" />
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="FileUploadResume" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
-            <br />
-        </div>
-
-
-        <br />
-        <br />
-
-
         <asp:Button ID="btnUpload" runat="server" Text="UPLOAD" class="btn" OnClick="btnUpload_Click" BackColor="#0099FF" ForeColor="White" Height="25px" Width="100px" />
     </form>
 

@@ -13,7 +13,13 @@ namespace masstech_task_1_company_mail_sending
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblCtc.Visible = false;
+            lblEctc.Visible = false;
+            lblNp.Visible = false;
 
+            txtctc.Visible = false;
+            txtEctc.Visible = false;
+            txtNoticePeriod.Visible = false;
         }
 
         protected void DropDownListStream_SelectedIndexChanged(object sender, EventArgs e)
@@ -42,14 +48,32 @@ namespace masstech_task_1_company_mail_sending
                 txtNoticePeriod.Enabled = false;
                 lblCtc.Enabled = false;
 
+                lblCtc.Visible = false;
+                lblEctc.Visible = false;
+                lblNp.Visible = false;
+
+                txtctc.Visible = false;
+                txtEctc.Visible = false;
+                txtNoticePeriod.Visible = false;
+
             }
-            else
+            else if(DropDownListExperience.SelectedIndex==2)
             {
                 txtctc.Enabled = true;
                 txtEctc.Enabled = true;
                 txtNoticePeriod.Enabled = true;
+            
+                lblCtc.Visible = true;
+                lblEctc.Visible = true;
+                lblNp.Visible = true;
+
+                txtctc.Visible = true;
+                txtEctc.Visible = true;
+                txtNoticePeriod.Visible = true;
 
             }
+
+            
         }
 
         protected void btnUpload_Click(object sender, EventArgs e)

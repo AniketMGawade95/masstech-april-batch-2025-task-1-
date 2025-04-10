@@ -13,7 +13,7 @@
             <br />
             <br />
             to
-            <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+            <asp:ListBox ID="ListBox1" runat="server" SelectionMode="Multiple"></asp:ListBox>
             <br />
             <br />
             to <asp:DropDownList ID="DropDownList1" runat="server">

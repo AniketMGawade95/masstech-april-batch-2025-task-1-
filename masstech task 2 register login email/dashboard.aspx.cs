@@ -10,6 +10,7 @@ using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
 
 namespace masstech_task_2_register_login_email
 {
@@ -29,7 +30,7 @@ namespace masstech_task_2_register_login_email
             conn = new SqlConnection(con);
             conn.Open();
 
-            if (!IsPostBack) // ✅ This avoids reloading data on every postback
+            if (!IsPostBack) 
             {
                 Label1.Text = "hello " + Session["email"].ToString();
 
@@ -69,7 +70,7 @@ namespace masstech_task_2_register_login_email
             }
 
             if (Session["email"] == null || Session["password"] == null)
-            {
+            { 
                 Response.Write("<script>alert('Session expired. Please log in again.');</script>");
                 return;
             }
@@ -80,26 +81,70 @@ namespace masstech_task_2_register_login_email
 
             try
             {
-                MailMessage mail = new MailMessage();
-                mail.From = new MailAddress(fmail);
-                mail.To.Add(tmail);
-                mail.Subject = "Files after login";
-                mail.Body = txtmessage.Text;
+                //MailMessage mail = new MailMessage();
+                //mail.From = new MailAddress(fmail);
+                //mail.To.Add(tmail);
+                //mail.Subject = "Files after login";
+                //mail.Body = txtmessage.Text;
 
-                if (FileUpload1.HasFiles)
-                {
-                    foreach (HttpPostedFile file in FileUpload1.PostedFiles)
-                    {
-                        string filename = file.FileName;
-                        mail.Attachments.Add(new Attachment(file.InputStream, filename));
-                    }
-                }
+                //if (FileUpload1.HasFiles)
+                //{
+                //    foreach (HttpPostedFile file in FileUpload1.PostedFiles)
+                //    {
+                //        string filename = file.FileName;
+                //        mail.Attachments.Add(new Attachment(file.InputStream, filename));
+                //    }
+                //}
+
+                //SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                //smtp.Credentials = new NetworkCredential(fmail, fpass);
+                //smtp.Port = 587;
+                //smtp.EnableSsl = true;
+                //smtp.Send(mail);
+
+
+                //foreach (ListItem item in ListBox1.Items)
+                //{
+                //    if (item.Selected)
+                //    {
+                //        MailMessage bmail = mail.Clone(); // clone the base mail
+                //        bmail.To.Add(item.Value);
+                //        smtp.Send(mail);
+                //        bmail.Dispose(); // Dispose mail message after sending
+                //    }
+                //}
 
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com");
                 smtp.Credentials = new NetworkCredential(fmail, fpass);
                 smtp.Port = 587;
                 smtp.EnableSsl = true;
-                smtp.Send(mail);
+
+                foreach (ListItem item in ListBox1.Items)
+                {
+                    if (item.Selected)
+                    {
+                        MailMessage mail = new MailMessage();
+                        mail.From = new MailAddress(fmail);
+                        mail.To.Add(item.Value);
+                        mail.Subject = "Files after login";
+                        mail.Body = txtmessage.Text;
+
+                        if (FileUpload1.HasFiles)
+                        {
+                            foreach (HttpPostedFile file in FileUpload1.PostedFiles)
+                            {
+                                byte[] fileData = new byte[file.ContentLength];
+                                file.InputStream.Read(fileData, 0, file.ContentLength);
+                                MemoryStream ms = new MemoryStream(fileData);
+                                mail.Attachments.Add(new Attachment(ms, file.FileName));
+                            }
+                        }
+
+                        smtp.Send(mail);
+                        mail.Dispose();
+                    }
+                }
+
 
                 Response.Write("<script>alert('Mail sent successfully');</script>");
             }

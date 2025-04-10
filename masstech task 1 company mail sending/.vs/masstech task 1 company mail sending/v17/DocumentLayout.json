@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\",
+  "WorkspaceRootPath": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\fresher.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|solutionrelative:fresher.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|solutionrelative:index.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|e:\\users\\anike\\source\\repos\\masstech buisnes solutions\\masstech task 1 company mail sending\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\fresher.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|solutionrelative:fresher.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|e:\\github\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\fresher.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|solutionrelative:fresher.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|solutionrelative:index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\assets\\stylesheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\assets\\stylesheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|solutionrelative:assets\\stylesheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\fresher.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|solutionrelative:fresher.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{267F71BB-631C-490E-92F1-CD939850C26C}|masstech task 1 company mail sending.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,51 +46,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "fresher.aspx.cs",
-              "DocumentMoniker": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\fresher.aspx.cs",
+              "DocumentMoniker": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\fresher.aspx.cs",
               "RelativeDocumentMoniker": "fresher.aspx.cs",
-              "ToolTip": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\fresher.aspx.cs",
+              "ToolTip": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\fresher.aspx.cs",
               "RelativeToolTip": "fresher.aspx.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAmwHsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T17:54:37.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "fresher.aspx",
-              "DocumentMoniker": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\fresher.aspx",
+              "DocumentMoniker": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\fresher.aspx",
               "RelativeDocumentMoniker": "fresher.aspx",
-              "ToolTip": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\fresher.aspx",
+              "ToolTip": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\fresher.aspx",
               "RelativeToolTip": "fresher.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-04-09T17:45:35.038Z"
+              "WhenOpened": "2025-04-09T17:45:35.038Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.aspx.cs",
-              "DocumentMoniker": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\Index.aspx.cs",
+              "DocumentMoniker": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\Index.aspx.cs",
               "RelativeDocumentMoniker": "Index.aspx.cs",
-              "ToolTip": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\Index.aspx.cs",
+              "ToolTip": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\Index.aspx.cs",
               "RelativeToolTip": "Index.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T16:48:16.935Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.aspx",
-              "DocumentMoniker": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\Index.aspx",
+              "DocumentMoniker": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\Index.aspx",
               "RelativeDocumentMoniker": "Index.aspx",
-              "ToolTip": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\Index.aspx",
+              "ToolTip": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\Index.aspx",
               "RelativeToolTip": "Index.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-04-09T14:55:42.076Z",
               "EditorCaption": ""
@@ -99,21 +100,22 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "StyleSheet1.css",
-              "DocumentMoniker": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\assets\\StyleSheet1.css",
+              "DocumentMoniker": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\assets\\StyleSheet1.css",
               "RelativeDocumentMoniker": "assets\\StyleSheet1.css",
-              "ToolTip": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\assets\\StyleSheet1.css",
+              "ToolTip": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\assets\\StyleSheet1.css",
               "RelativeToolTip": "assets\\StyleSheet1.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-09T15:00:23.235Z"
+              "WhenOpened": "2025-04-09T15:00:23.235Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Web.config",
-              "DocumentMoniker": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\Web.config",
+              "DocumentMoniker": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\Web.config",
               "RelativeDocumentMoniker": "Web.config",
-              "ToolTip": "E:\\Users\\anike\\source\\repos\\MassTech Buisnes solutions\\masstech task 1 company mail sending\\Web.config",
+              "ToolTip": "E:\\GitHub\\masstech-april-batch-2025-task-1-\\masstech task 1 company mail sending\\Web.config",
               "RelativeToolTip": "Web.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",

@@ -31,6 +31,21 @@ namespace masstech_task_1_company_mail_sending
             string email = Session["email"].ToString();
             string contact = Session["contact"].ToString();
 
+            query = "select * from resumesending where email='" + Session["email"].ToString() + "'";
+
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                Response.Write("<script>alert('You have already booked the meeting')</script>");
+                Server.Transfer("Index.aspx");
+                return;
+
+
+            }
+
 
         }
 
@@ -41,26 +56,16 @@ namespace masstech_task_1_company_mail_sending
                 if (DropDownListDays.SelectedIndex == 0)
                 {
                     Response.Write("<script>alert('Select Day')</script>");
+                    return;
                 }
 
                 if (DropDownListTiming.SelectedIndex == 0)
                 {
                     Response.Write("<script>alert('Select Timing')</script>");
-                }
-
-                query = "select * from resumesending where email='" + Session["email"].ToString()+"'";
-
-                SqlCommand cmd = new SqlCommand(query, conn);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataSet ds = new DataSet();
-                da.Fill(ds);
-                if (ds.Tables[0].Rows.Count > 0)
-                {
-                    Response.Write($"<script>alert('You have already booked the meeting')</script>");
                     return;
-                    
-                    
                 }
+
+                
 
 
 
